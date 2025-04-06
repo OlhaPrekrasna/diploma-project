@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style1.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <header>
+      <nav>
+        <div class="nav-left">
+          <a href="" class="link-logo"></a>
+          <form class="search-form">
+            <input class="search-events" type="text" placeholder="Search events">
+                <input class="search-location" type="text" placeholder="Mountain View, CA">
+                <input class="search-button" type="submit">
+          </form>
+        </div>
+        <div class="nav-right">
+          <div class="select-language">
+            <label for="language"></label>
+            <select id="language">
+              <option value="en">English</option>
+              <option value="de">Deutsch</option>
+            </select>
+          </div>
+          <form>
+            <input class="btn-log-in" type="submit" value="Log In"/>
+            <input class="btn-sign-up" type="submit" value="Sign Up"/>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="first-container">
+          <div class="first-content">
+              <h1>The people platform—Where interests become friendships</h1>
+              <p class="intro-text">Whatever your interest, from hiking and reading to networking and skill sharing,
+                  there are thousands of people who share it on Meetup. Events are happening
+                  every day—sign up to join the fun.</p>
+              <button class="join-meet" type="submit">Join Meetup</button>
+          </div>
+          <div class="first-img">
+            <img src="/assets/img/png/logo_event.svg.png" alt="">
+        </div>
+      </div>
+  
+      <!-- events -->
+       <div class="events-container"></div>
+      <div class="events-near">
+        <h2 class="title-events">Events near</h2>
+        <div class="location-block">
+            <p class="link-location">Mountain View, CA</p>
+            <img src="/assets/img/svg/edit.svg" class="edit"/>
+      </div>
+      <p class="all-events">See all events</p>
+    </div>
+    
+      <div class="grid-container">
+          <!-- 11111111111 -->
+          <div class="grid-item">
+              <img src="/assets/img/png/img-grid1.png" alt="event" class="event-img"/>
+              <div class="event-card">
+                  <div class="event-content">
+                      <h3 class="event-title">Day Trading Idea and Strategy</h3>
+                      <div class="event-info">
+                          <p class="event-location">Business (5 km)</p>
+                      </div>
+                  </div>
+                  <div class="event-info">
+                      <span class="event-icon">
+                          <img src="/assets/img/svg/calender.svg"/>
+                      </span>
+                      <p class="event-time">Mon, Mar 18 · 7:00 PM PDT</p>         
+                  </div>
+                  <div class="going">
+                      <img src="/assets/img/svg/going.svg" class="going-check" alt="check"/>
+                      <p class="text-info"> 1 going</p>
+                      <img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+                      <p class="text-info">Free</p>
+                  </div>
+              </div> <!-- 🔹 Закрыли .event-card (не было в коде) -->
+          </div>
+  
+          <!-- 2222222 -->
+          <div class="grid-item">
+              <img src="/assets/img/png/img-grid2.png" alt="event" class="event-img"/>
+              <div class="event-card">
+                  <div class="event-content">
+                      <h3 class="event-title">Let's Talk Networking: JPMorgan Chase in Palo Alto</h3>
+                      <div class="event-info">
+                          <p class="event-location">Business (25 km)</p>
+                      </div>
+                      <div class="event-info">
+                          <span class="event-icon">
+                              <img src="/assets/img/svg/calender.svg"/>
+                          </span>
+                          <p class="event-time">Tue, Mar 19 · 5:00 PM PDT</p>         
+                      </div>
+                      <div class="going">
+                          <img src="/assets/img/svg/going.svg" class="going-check" alt="check"/>
+                          <p class="text-info"> 41 going</p>
+                          <img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+                          <p class="text-info">Free</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- 33333333333333 -->
+          <div class="grid-item">
+            <img src="/assets/img/png/img-grid3.png" alt="event" class="event-img"/>
+            <div class="event-card">
+                <div class="event-content">
+                    <h3 class="event-title">
+                        Tech Talks & Quiz: Next-Gen Database Solutions for Emerging Use Cases
+                    </h3>
+                    <div class="event-info">
+                        <p class="event-location">Technology</p>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-icon">
+                            <img src="/assets/img/svg/calender.svg"/>
+                        </span>
+                        <p class="event-time">Wed, Mar 13 · 6:00 PM PDT</p>         
+                    </div>
+                    <div class="going">
+                        <img src="/assets/img/svg/going.svg" class="going-check" alt="check"/>
+                        <p class="text-info"> 40 going</p>
+                        <img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+                        <p class="text-info">Free</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 444444444444444 -->
+          <div class="grid-item">
+            <img src="/assets/img/png/img-grid4.png" alt="event" class="event-img"/>
+            <div class="event-card"> <!-- Теперь внутри grid-item -->
+                <div class="event-content">
+                    <h3 class="event-title">
+                      INFORMS San Francisco Chapter In-Person Event
+                    </h3>
+                    <div class="event-info">
+                        <p class="event-location">Health and Wellbeing (50 km)</p>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-icon">
+                            <img src="/assets/img/svg/calender.svg"/>
+                        </span>
+                        <p class="event-time">Thu, Mar 28 · 5:00 PM PDT</p>         
+                    </div>
+                    <div class="going">
+                        <img src="/assets/img/svg/going.svg" class="going-check" alt="check"/>
+                        <p class="text-info"> 41 going</p>
+                        <img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+                        <p class="text-info">Free</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- 55555555555555 -->
+
+          <div class="grid-item">
+            <img src="/assets/img/png/img-grid5.png" alt="event" class="event-img"/>
+            <div class="event-card">
+                <div class="event-content">
+                    <h3 class="event-title">
+                      AI Wednesdays - Meet and Greet!
+                    </h3>
+                    <div class="event-info">
+                        <p class="event-location">Technology (5 km)</p>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-icon">
+                            <img src="/assets/img/svg/calender.svg"/>
+                        </span>
+                        <p class="event-time">Wed, Mar 13 · 6:30 PM PDT</p>         
+                    </div>
+                    <div class="going">
+                        <img src="/assets/img/svg/going.svg" class="going-check" alt="check"/>
+                        <p class="text-info"> 29 going</p>
+                        <img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+                        <p class="text-info">Free</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- 6666666666 -->
+
+          <div class="grid-item">
+            <img src="/assets/img/png/img-grid6.png" alt="event" class="event-img"/>
+            <div class="event-card"> 
+                <div class="event-content">
+                    <h3 class="event-title">
+                      ROS By-The-Bay March 2024
+                    </h3>
+                    <div class="event-info">
+                        <p class="event-location">Social Activities</p>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-icon">
+                            <img src="/assets/img/svg/calender.svg"/>
+                        </span>
+                        <p class="event-time">Thu, Mar 21 · 6:00 PM PDT</p>         
+                    </div>
+                    <div class="going">
+                        <img src="/assets/img/svg/going.svg" class="going-check" alt="check"/>
+                        <p class="text-info"> 51 going</p>
+                        <img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+                        <p class="text-info">Free</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <!-- 7777777777777 -->
+
+          <div class="grid-item">
+            <img src="/assets/img/png/img-grid7.png" alt="event" class="event-img"/>
+            <div class="event-card"> <!-- Теперь внутри grid-item -->
+                <div class="event-content">
+                    <h3 class="event-title">
+                      Free Christian Singles' Dinner
+                    </h3>
+                    <div class="event-info">
+                        <p class="event-location">Hobbies and Passions (10 km)</p>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-icon">
+                            <img src="/assets/img/svg/calender.svg"/>
+                        </span>
+                        <p class="event-time">Fri, Mar 29 · 6:00 PM PDT</p>         
+                    </div>
+                    <div class="going">
+                        <img src="/assets/img/svg/going.svg" class="going-check" alt="check"/>
+                        <p class="text-info"> 11 going</p>
+                        <img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+                        <p class="text-info">Free</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                  
+          <!-- 888888888888888 -->
+          
+          <div class="grid-item">
+            <img src="/assets/img/png/img-grid8.png" alt="event" class="event-img"/>
+            <div class="event-card"> <!-- Теперь внутри grid-item -->
+                <div class="event-content">
+                    <h3 class="event-title">
+                      In-person: Deep Dive into RAG Architectures (Food served)
+                    </h3>
+                    <div class="event-info">
+                        <p class="event-location">Hobbies and Passions (50 km)</p>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-icon">
+                            <img src="/assets/img/svg/calender.svg"/>
+                        </span>
+                        <p class="event-time">Thu, Mar 14 · 5:00 PM PDT</p>         
+                    </div>
+                    <div class="going">
+                        <img src="/assets/img/svg/going.svg" class="going-check" alt="check"/>
+                        <p class="text-info"> 16 going</p>
+                        <img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+                        <p class="text-info">Free</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <!-- 9999999999999 -->
+          <div class="grid-item">
+            <img src="/assets/img/png/img-grid9.png" alt="event" class="event-img"/>
+            <div class="event-card">
+                <div class="event-content">
+                    <h3 class="event-title">
+                      Amazing On-Demand 15 Min Interviews with Top Coaches and Speakers
+                    </h3>
+                    <div class="event-info">
+                        <p class="event-location">Business (25 km)</p>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-icon">
+                            <img src="/assets/img/svg/calender.svg"/>
+                        </span>
+                        <p class="event-time">Thu, Mar 14 · 6:00 PM PDT</p>         
+                    </div>
+                    <div class="going">
+                        <img src="/assets/img/svg/going.svg" class="going-check" alt="check"/>
+                        <p class="text-info"> 3 going</p>
+                        <img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+                        <p class="text-info">Free</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <!-- 10101010101010 -->
+          <div class="grid-item">
+            <img src="/assets/img/png/img-grid10.png" alt="event" class="event-img"/>
+            <div class="event-card">
+                <div class="event-content">
+                    <h3 class="event-title">
+                      Vision Pro Developers Online Meetup
+                    </h3>
+                    <div class="event-info">
+                        <p class="event-location">Technology</p>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-icon">
+                            <img src="/assets/img/svg/calender.svg"/>
+                        </span>
+                        <p class="event-time">Wed, Mar 13 · 7:00 PM PDT</p>         
+                    </div>
+                    <div class="going">
+                        <img src="/assets/img/svg/going.svg" class="going-check" alt="check"/>
+                        <p class="text-info"> 51 going</p>
+                        <img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+                        <p class="text-info">Free</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <!-- 11 -->
+          <div class="grid-item">
+            <img src="/assets/img/png/img-grid11.png" alt="event" class="event-img"/>
+            <div class="event-card">
+                <div class="event-content">
+                    <h3 class="event-title">
+                      Significant Musical Moments
+                    </h3>
+                    <div class="event-info">
+                        <p class="event-location">Hobbies and Passions (10 km)</p>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-icon">
+                            <img src="/assets/img/svg/calender.svg"/>
+                        </span>
+                        <p class="event-time">Wed, Mar 13 · 6:00 PM PDT</p>         
+                    </div>
+                    <div class="going">
+                        <img src="/assets/img/svg/going.svg" class="going-check" alt="check"/>
+                        <p class="text-info"> 16 going</p>
+                        <img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+                        <p class="text-info">Free</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- 12 -->
+          <div class="grid-item">
+            <img src="/assets/img/png/img-grid12.png" alt="event" class="event-img"/>
+            <div class="event-card">
+                <div class="event-content">
+                    <h3 class="event-title">
+                      FREE Webinar : Introduction to Power BI
+                    </h3>
+                    <div class="event-info">
+                        <p class="event-location">Technology</p>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-icon">
+                            <img src="/assets/img/svg/calender.svg"/>
+                        </span>
+                        <p class="event-time">Thu, Mar 14 · 5:30 PM PDT</p>         
+                    </div>
+                    <div class="going">
+                        <img src="/assets/img/svg/going.svg" class="going-check" alt="check"/>
+                        <p class="text-info"> 33 going</p>
+                        <img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+                        <p class="text-info">Free</p>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        
+      </div>
+      <!-- join meetup -->
+      <div class="join-meetup">
+        <div class="join-content">
+          <h2>Join Meetup</h2>
+          <p class="join-text">People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together. Membership is free.</p>
+          <button class="sign-up" type="submit">Sign up</button>
+        </div>
+        <img src="/assets/img/png/join-meetup.png" class="img-join-meetup"/>
+        
+      </div>
+  </main>
+<!-- футер -->
+
+<!-- <footer class="footer">
+    <div class="footer__main">
+      <a href="# " class="logo">
+        <img src="images/logo.svg" alt="" class="logo-img" />
+      </a>
+      <p class="footer__text">Get out there & discover your next slope, mountain & destination!</p>
+      <p class="copy">Copyright 2023 MNTN, Inc. Terms & Privacy</p>
+    </div>
+    <div class="footer__item">
+      <h4 class="footer__item-title">More on The Blog</h4>
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <a href="#" class="footer__list-link">About MNTN</a>
+        </li>
+        <li class="footer__list-item">
+          <a href="#" class="footer__list-link">Contributors & Writers</a>
+        </li>
+        <li class="footer__list-item">
+          <a href="#" class="footer__list-link">Write For Us</a>
+        </li>
+        <li class="footer__list-item">
+          <a href="#" class="footer__list-link">Contact Us</a>
+        </li>
+        <li class="footer__list-item">
+          <a href="#" class="footer__list-link">Privacy Policy</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__item">
+      <h4 class="footer__item-title">More on MNTN</h4>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-link">The Team</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-link">Jobs</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-link">Press</a>
+          </li>
+        </ul>
+    </div>
+  </footer> -->
+
+<!-- футер-чат -->
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="cta">
+            <h2 class="footer-title">Create your own Meetup group.</h2>
+            <button type="submit" class="get-started">Get Started</button>
+        </div>
+        <div class="footer-links">
+            <div class="footer-section">
+                <h3 class="footer-account">Your Account</h3>
+                <ul>
+                    <li><a href="#" class="your-account">Sign up</a></li>
+                    <li><a href="#" class="your-account">Log in</a></li>
+                    <li><a href="#" class="your-account">Help</a></li>
+                    <li><a href="#" class="your-account">Become an Affiliate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-account">Discover</h3>
+                <ul>
+                    <li><a href="#" class="your-account">Groups</a></li>
+                    <li><a href="#" class="your-account">Calendar</a></li>
+                    <li><a href="#" class="your-account">Topics</a></li>
+                    <li><a href="#" class="your-account">Cities</a></li>
+                    <li><a href="#" class="your-account">Online Events</a></li>
+                    <li><a href="#" class="your-account">Local Guides</a></li>
+                    <li><a href="#" class="your-account">Make Friends</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-account">Meetup</h3>
+                <ul>
+                    <li><a href="#" class="your-account">About</a></li>
+                    <li><a href="#" class="your-account">Blog</a></li>
+                    <li><a href="#" class="your-account">Meetup Pro</a></li>
+                    <li><a href="#" class="your-account">Careers</a></li>
+                    <li><a href="#" class="your-account">Apps</a></li>
+                    <li><a href="#" class="your-account">Podcast</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-social-media">
+            <div class="footer-follow">
+                <h3 class="footer-account">Follow us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="/assets/img/svg/facebook.svg" class="soc-icons" alt="Facebook"></a>
+                    <a href="#"><img src="/assets/img/svg/twitter.svg" class="soc-icons" alt="Twitter"></a>
+                    <a href="#"><img src="/assets/img/svg/youtube.svg" class="soc-icons" alt="YouTube"></a>
+                    <a href="#"><img src="/assets/img/svg/instagram.svg" class="soc-icons" alt="Instagram"></a>
+                    <a href="#"><img src="/assets/img/svg/tiktok.svg" class="soc-icons" alt="TikTok"></a>
+                </div>
+            </div>
+            <div class="app-links">
+                <a href="#"><img src="/assets/img/png/google-play.png" alt="Get it on Google Play"></a>
+                <a href="#"><img src="/assets/img/png/app-store.png" alt="Download on the App Store"></a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Meetup</p>
+        <a href="#" class="footer-links-bottom">Terms of Service</a>
+        <a href="#" class="footer-links-bottom">Privacy Policy</a>
+        <a href="#" class="footer-links-bottom">Do Not Sell or Share My Personal Data</a>
+        <a href="#" class="footer-links-bottom">Cookie Policy</a>
+        <a href="#" class="footer-links-bottom">Help</a>
+      </div>
+</footer>
+
+  <script src="./scripts/index.js"></script>
+  </body>
+</html>
+

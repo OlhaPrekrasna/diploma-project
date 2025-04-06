@@ -1,0 +1,581 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+header {
+  position: relative;
+  max-width: 1512px;
+  width: 100%;
+  height: 64px;
+}
+.wrapper > main {
+  flex: 1;
+}
+
+/* навигационное меню слева */
+.nav-left {
+  display: flex;
+  position: absolute;
+  width: 750px;
+  height: 42px;
+  left: 0;
+  top: 11px;
+}
+a {
+  /* position: absolute;
+  width: 120px;
+  height: 35px;
+  top: 4px; */
+}
+.search-form {
+  display: flex;
+  width: 600px;
+  height: 42px;
+  font-size: 16px;
+  padding-left: 150px;
+}
+.search-events {
+  background: url("/assets/img/svg/search-logo.svg") no-repeat left 10px center;
+  background-size: 16px;
+  padding-left: 35px;
+  border: 1px solid #d9d9d9;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #707070;
+  outline: none;
+  width: 300px;
+}
+.search-location {
+  border: 1px solid #d9d9d9;
+  color: #000000;
+  outline: none;
+  padding-left: 10px;
+  width: 250px;
+}
+.search-button {
+  background: url("/assets/img/svg/search-button.svg") no-repeat center;
+  background-color: #f65858;
+  width: 50px;
+  height: 42px;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* навигационное меню справа */
+.nav-right {
+  padding-left: 1550px;
+  display: flex;
+  position: absolute;
+  height: 42px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+#language {
+  border: none;
+  padding-left: 35px;
+  background: url("/assets/img/svg/language.svg") no-repeat left 10px center;
+  display: flex;
+  position: absolute;
+  appearance: none;
+}
+
+/* main */
+.first-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 1196px;
+  height: 461px;
+  border: none;
+  margin-bottom: 24px;
+}
+.first-content {
+}
+h1 {
+  width: 600px;
+  height: 104px;
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  color: #212121;
+}
+.intro-text {
+  width: 609px;
+  height: 72px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121;
+}
+/* картинка-велосипед */
+.first-img {
+  width: 379px;
+  height: 269px;
+  margin-left: 54px;
+}
+/* кнопка joinMeetup */
+.join-meet {
+  width: 125px;
+  height: 40px;
+  border: 1px solid #00798a;
+  border-radius: 8px;
+  background-color: #00798a;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 99px;
+}
+
+.join-meet:hover {
+  background-color: #005f6b;
+  color: #ffffff;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.join-meet:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* grid-container */
+
+.events-near {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Элементы выравниваются по левому краю */
+  align-items: center; /* Вертикальное выравнивание по центру */
+  flex-wrap: nowrap; /* Элементы не переносятся на новую строку */
+  margin: auto;
+  margin-bottom: 16px;
+  height: 36px;
+}
+
+.title-events {
+  font-family: "Roboto", sans-serif; /* Исправлено: добавлена запятая */
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: 42px; /* Убираем отступы */
+  margin-right: 10px;
+  margin-bottom: 35px;
+}
+
+.link-location {
+  width: 186px;
+  height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #00798a;
+  margin-right: 8px; /* Отступ справа для расстояния между элементами */
+}
+
+.edit {
+  width: 22px;
+  height: 22px;
+  color: #00798a;
+  margin-left: 8px; /* Отступ слева для расстояния между элементами */
+}
+
+.location-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 44px;
+  border: 1px solid rgba(151, 202, 209, 0.12);
+  border-radius: 8px;
+  background-color: rgba(151, 202, 209, 0.12);
+}
+.all-events {
+  width: 106px;
+  height: 24px;
+  color: #00798a;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  width: 1196px;
+  height: 1441px;
+  margin: 0 auto;
+}
+.link-location {
+}
+
+.grid-item {
+  display: flex;
+  position: relative;
+  width: 272px;
+  height: 399px;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 20px;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.event-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 0;
+}
+
+/* .......... */
+.event-card {
+  border: 1px solid black;
+  width: 100%;
+  max-width: 272px; /* Ограничиваем ширину */
+  padding-top: 32px;
+  padding-left: 2px;
+  border: none;
+  background-color: #fff;
+}
+.event-content {
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600; /* SemiBold */
+  color: #212121;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: row;
+  color: #707070;
+  gap: 8px; /* Расстояние между иконкой и текстом */
+  margin-bottom: 5px;
+}
+.event-location {
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.going {
+  display: flex;
+  flex-direction: row;
+}
+.calender {
+  color: #707070;
+  width: 20px;
+  height: 20px;
+}
+.going-check {
+  color: #707070;
+  width: 20px;
+  height: 20px;
+}
+.ticket {
+  color: #707070;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+.text-info {
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.event-icon {
+  font-size: 16px;
+}
+.event-time {
+  font-size: 14px;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.join-meetup {
+  display: flex;
+  flex-direction: row;
+  width: 1192px;
+  height: 236px;
+  background-color: rgba(151, 202, 209, 0.08);
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-top: 34px;
+  margin: auto;
+}
+.join-content {
+  color: #000000;
+}
+h2 {
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  margin-top: 36px;
+  margin-bottom: 16px;
+  margin-left: 56px;
+}
+.join-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  width: 665px;
+  height: 56px;
+  margin-bottom: 16px;
+  margin-left: 56px;
+}
+.sign-up {
+  background-color: #e32359;
+  color: #ffffff;
+  width: 192px;
+  height: 40px;
+  border: 1px #e32359 solid;
+  border-radius: 8px;
+  margin-bottom: 36px;
+  margin-left: 56px;
+}
+.img-join-meetup {
+  width: 341px;
+  height: 196px;
+  margin-right: 56px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* навигационное меню справа */
+.nav-right {
+  padding-left: 1550px;
+  display: flex;
+  position: absolute;
+  height: 42px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* футер-марафон */
+
+/* .footer {
+  max-width: 1480;
+  padding: 0 10px;
+  margin: 0 auto 240px;
+  display: flex;
+  gap: 212px;
+}
+footer__main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-right: auto;
+}
+
+.footer__text {
+  max-width: 300px;
+}
+
+.copy {
+  margin-top: auto;
+  opacity: 0.5;
+  font-family: "Gilroy-Medium";
+  font-weight: 500;
+}
+
+.footer__item {
+}
+
+.footer__item-title {
+  color: #fbd784;
+  font-size: 24px;
+  line-height: 1.3;
+  margin: 0 0 24px;
+}
+.footer__list-item {
+  font-family: "Gilroy-Medium";
+  font-weight: 500;
+}
+.footer__list-item + .footer__list-item {
+  padding-top: 16px;
+} */
+
+/* футер-чат */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 40px;
+  text-align: left;
+}
+.footer-title {
+  width: 249px;
+  height: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #F6F7F8;
+  margin-left: 0;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  margin-right: 16px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #707070; 
+  margin-bottom: 20px;
+  width: 1120px;
+  height: 69px;
+}
+
+.get-started {
+  width: 119px;
+  height: 44px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 6px;
+  background-color: #212121;
+  transition: all 0.3s ease;
+}
+
+.get-started:hover {
+  background-color: #FFFFFF;
+  color: #212121;
+  cursor: pointer;
+}
+
+.get-started:active {
+  transform: scale(0.95); 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 1120px;
+  height: 236px;
+  margin-bottom: 20px;
+}
+.footer-account {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #F6F7F8;
+  margin-bottom: 7px;
+}
+.your-account {
+margin-bottom: 7px;
+color: #C5C4C4;
+font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-section {
+  width: 322px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-social-media {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.footer-follow {
+  width: 278px;
+  height: 90px;
+  margin-bottom: 20px;
+  /* margin-top: 24px; */
+}
+.soc-icons {
+  width: 30px;
+  height: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.footer-links-bottom {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #C5C4C4;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.app-links {
+  display: flex;
+  gap: 15px;
+}
+
+.app-links img {
+  height: 40px;
+}
