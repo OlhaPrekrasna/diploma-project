@@ -157,19 +157,18 @@ h1 {
 .events-near {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start; /* Элементы выравниваются по левому краю */
-  align-items: center; /* Вертикальное выравнивание по центру */
-  flex-wrap: nowrap; /* Элементы не переносятся на новую строку */
+  justify-content: flex-start;
+  flex-wrap: nowrap;
   margin: auto;
   margin-bottom: 16px;
   height: 36px;
 }
 
 .title-events {
-  font-family: "Roboto", sans-serif; /* Исправлено: добавлена запятая */
+  font-family: "Roboto", sans-serif;
   font-size: 28px;
   font-weight: 600;
-  margin-left: 42px; /* Убираем отступы */
+  margin-left: 42px;
   margin-right: 10px;
   margin-bottom: 35px;
 }
@@ -181,14 +180,14 @@ h1 {
   font-size: 20px;
   font-weight: 600;
   color: #00798a;
-  margin-right: 8px; /* Отступ справа для расстояния между элементами */
+  margin-right: 8px;
 }
 
 .edit {
   width: 22px;
   height: 22px;
   color: #00798a;
-  margin-left: 8px; /* Отступ слева для расстояния между элементами */
+  margin-left: 8px;
 }
 
 .location-block {
@@ -251,7 +250,7 @@ h1 {
 .event-card {
   border: 1px solid black;
   width: 100%;
-  max-width: 272px; /* Ограничиваем ширину */
+  max-width: 272px;
   padding-top: 32px;
   padding-left: 2px;
   border: none;
@@ -265,7 +264,7 @@ h1 {
 
 .event-title {
   font-family: "Roboto", sans-serif;
-  font-weight: 600; /* SemiBold */
+  font-weight: 600;
   color: #212121;
   font-size: 20px;
   margin-bottom: 10px;
@@ -276,7 +275,7 @@ h1 {
   display: flex;
   flex-direction: row;
   color: #707070;
-  gap: 8px; /* Расстояние между иконкой и текстом */
+  gap: 8px;
   margin-bottom: 5px;
 }
 .event-location {
@@ -378,57 +377,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-
-/* футер-марафон */
-
-/* .footer {
-  max-width: 1480;
-  padding: 0 10px;
-  margin: 0 auto 240px;
-  display: flex;
-  gap: 212px;
-}
-footer__main {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-right: auto;
-}
-
-.footer__text {
-  max-width: 300px;
-}
-
-.copy {
-  margin-top: auto;
-  opacity: 0.5;
-  font-family: "Gilroy-Medium";
-  font-weight: 500;
-}
-
-.footer__item {
-}
-
-.footer__item-title {
-  color: #fbd784;
-  font-size: 24px;
-  line-height: 1.3;
-  margin: 0 0 24px;
-}
-.footer__list-item {
-  font-family: "Gilroy-Medium";
-  font-weight: 500;
-}
-.footer__list-item + .footer__list-item {
-  padding-top: 16px;
-} */
-
-/* футер-чат */
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+/* футер */
 
 .footer {
   background-color: #212121;
@@ -439,10 +388,10 @@ body {
 .footer-title {
   width: 249px;
   height: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: #F6F7F8;
+  color: #f6f7f8;
   margin-left: 0;
   margin-top: 10px;
   margin-bottom: 35px;
@@ -458,7 +407,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 1px solid #707070; 
+  border-bottom: 1px solid #707070;
   margin-bottom: 20px;
   width: 1120px;
   height: 69px;
@@ -468,25 +417,23 @@ body {
   width: 119px;
   height: 44px;
   text-align: center;
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 6px;
   background-color: #212121;
   transition: all 0.3s ease;
 }
 
 .get-started:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #212121;
   cursor: pointer;
 }
 
 .get-started:active {
-  transform: scale(0.95); 
+  transform: scale(0.95);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-
-
 
 .footer-links {
   display: flex;
@@ -496,16 +443,16 @@ body {
   margin-bottom: 20px;
 }
 .footer-account {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #F6F7F8;
+  color: #f6f7f8;
   margin-bottom: 7px;
 }
 .your-account {
-margin-bottom: 7px;
-color: #C5C4C4;
-font-family: 'Roboto', sans-serif;
+  margin-bottom: 7px;
+  color: #c5c4c4;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -532,9 +479,9 @@ font-family: 'Roboto', sans-serif;
   text-decoration: none;
 }
 .footer-social-media {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer-follow {
@@ -561,10 +508,10 @@ justify-content: space-between;
 }
 .footer-links-bottom {
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #C5C4C4;
+  color: #c5c4c4;
 }
 
 .footer-bottom p {
