@@ -13,89 +13,251 @@ body {
   flex-direction: column;
   overflow: clip;
 }
-header {
+
+.main-header {
+  width: 1512px;
+  height: 64px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-menu a:hover {
+  color: #007bff;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: #707070;
+}
+
+.signup-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.user-icon {
+  width: 24px;
+  height: 24px;
+}
+/* header {
   position: relative;
   max-width: 1512px;
   width: 100%;
   height: 64px;
-}
+} */
 .wrapper > main {
   flex: 1;
 }
 
-/* навигационное меню слева */
-.nav-left {
+.container {
+  width: 100%;
+  padding: 0 24px;
   display: flex;
-  position: absolute;
-  width: 750px;
-  height: 42px;
-  left: 0;
-  top: 11px;
+  align-items: center;
+  justify-content: space-between;
 }
-a {
-  /* position: absolute;
-  width: 120px;
-  height: 35px;
-  top: 4px; */
+
+.logo img {
+  height: 40px;
+  margin-right: 40px;
 }
-.search-form {
+
+.nav-menu-left {
   display: flex;
-  width: 600px;
+  flex-direction: row;
+}
+
+/* search */
+
+.search-bar {
+  width: 592px;
   height: 42px;
-  font-size: 16px;
-  padding-left: 150px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
 }
-.search-events {
-  background: url("/assets/img/svg/search-logo.svg") no-repeat left 10px center;
-  background-size: 16px;
-  padding-left: 35px;
-  border: 1px solid #d9d9d9;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  color: #707070;
-  outline: none;
-  width: 300px;
+
+.search-input-group {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  flex: 1;
 }
-.search-location {
-  border: 1px solid #d9d9d9;
-  color: #000000;
-  outline: none;
-  padding-left: 10px;
-  width: 250px;
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
-.search-button {
-  background: url("/assets/img/svg/search-button.svg") no-repeat center;
-  background-color: #f65858;
-  width: 50px;
-  height: 42px;
+
+.search-input {
   border: none;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  background-color: transparent;
+  color: #333;
+}
+
+.divider {
+  width: 1px;
+  height: 60%;
+  background-color: #ccc;
+}
+
+.location-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #000;
+  background-color: transparent;
+  padding: 0 12px;
+  flex: 1;
+  min-width: 100px;
+}
+
+.search-button {
+  width: 42px;
+  height: 100%;
+  background-color: #f25757;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
 }
-/* навигационное меню справа */
-.nav-right {
-  padding-left: 1550px;
+
+.search-button img {
+  width: 16px;
+  height: 16px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-menu a:hover {
+  color: #007bff;
+}
+
+.header-actions {
   display: flex;
-  position: absolute;
-  height: 42px;
-  font-size: 14px;
   justify-content: center;
   align-items: center;
 }
-#language {
+
+.login-btn,
+.signup-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  font-size: 14px;
   border: none;
-  padding-left: 35px;
-  background: url("/assets/img/svg/language.svg") no-repeat left 10px center;
-  display: flex;
-  position: absolute;
-  appearance: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.login-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  background-color: transparent;
+  color: #212121;
+  cursor: pointer;
+}
+.login-btn:hover {
+  background-color: #00798a;
+  border: 1px solid #00798a;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 83px;
+  height: 36px;
+}
+/* доделать анимацию при клике */
+.login-btn:click {
+  background-color: #00798a;
+  border: 1px solid #00798a;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 83px;
+  height: 36px;
+}
+
+.signup-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #00798a;
+  color: #ffffff;
+  margin-right: 50px;
+  width: 83px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.user-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* main */
 .first-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   margin: auto;
   width: 1196px;
@@ -103,11 +265,8 @@ a {
   border: none;
   margin-bottom: 24px;
 }
-.first-content {
-}
 h1 {
-  width: 600px;
-  height: 104px;
+  width: 700px;
   font-family: "Roboto", sans-serif;
   font-size: 42px;
   color: #212121;
@@ -119,6 +278,8 @@ h1 {
   font-size: 16px;
   font-weight: 400;
   color: #212121;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 /* картинка-велосипед */
 .first-img {
@@ -157,18 +318,21 @@ h1 {
 .events-near {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: nowrap;
+  max-width: 1192px;
   margin: auto;
   margin-bottom: 16px;
   height: 36px;
+}
+.near-location {
+  display: flex;
 }
 
 .title-events {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
   font-weight: 600;
-  margin-left: 42px;
   margin-right: 10px;
   margin-bottom: 35px;
 }
@@ -228,7 +392,6 @@ h1 {
   width: 272px;
   height: 399px;
   background-color: transparent;
-  border: 1px solid black;
   padding: 20px;
   padding-top: 0;
   display: flex;
@@ -260,6 +423,8 @@ h1 {
   padding-top: 110px;
   display: flex;
   flex-direction: column;
+  max-width: 1192px;
+  margin: auto;
 }
 
 .event-title {
@@ -331,13 +496,18 @@ h1 {
   margin: auto;
 }
 .join-content {
-  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 30px;
+  color: #212121;
 }
-h2 {
+.join-title {
   color: #212121;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  margin-top: 36px;
+  margin-top: 0;
   margin-bottom: 16px;
   margin-left: 56px;
 }
@@ -368,7 +538,7 @@ h2 {
 }
 
 /* навигационное меню справа */
-.nav-right {
+/* .nav-right {
   padding-left: 1550px;
   display: flex;
   position: absolute;
@@ -376,7 +546,7 @@ h2 {
   font-size: 14px;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* категории */
 
@@ -397,6 +567,7 @@ h2 {
   font-size: 28px;
   height: 36px;
   margin-bottom: 24px;
+  margin-top: 64px;
   margin-left: 0;
   padding-left: 0;
   color: #212121;
@@ -452,9 +623,18 @@ h2 {
 }
 
 /* города */
+.popular-cities {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-top: 64px;
+  width: 1192px;
+  margin: auto;
+}
 
 .cities-section {
-  max-width: 1192px;
+  margin-top: 64px;
   margin-left: 0;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -465,8 +645,6 @@ h2 {
   font-weight: 600;
   font-size: 28px;
   color: #212121;
-  /* width: 342px;
-  height: 36px; */
   padding-left: 0;
   margin-left: 0;
   margin-bottom: 16px;
@@ -479,14 +657,14 @@ h2 {
   font-size: 16px;
   color: #707070;
   margin-bottom: 40px;
-  max-width: 600px;
+  /* max-width: 600px; */
   margin-left: 0;
   text-align: start;
 }
 
 .cities-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   flex-wrap: nowrap;
   gap: 16px;
@@ -495,13 +673,14 @@ h2 {
 .city-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  width: 160px;
+  width: 205px;
 }
 
 .city-image {
-  width: 140px;
-  height: 140px;
+  width: 205px;
+  height: 205px;
   background-color: #ddd;
   background-size: cover;
   background-position: center;
@@ -510,63 +689,192 @@ h2 {
 }
 
 .city-name {
-  font-size: 14px;
-  font-weight: 500;
-  color: #1c1c1c;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #212121;
 }
 
-/* .categories-section {
+/* как работает митап? */
+
+.meetup-how {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-beetween;
+  max-width: 1192px;
+  margin-left: 0px;
+  margin: auto;
+}
+
+.title-how-meetup {
+  margin-top: 64px;
+  margin-bottom: 16px;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #212121;
+  text-align: left;
+}
+.title-box-meetup {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  height: 24px;
+  margin-bottom: 16px;
+  margin-left: 0;
+  color: #212121;
+}
+.text-how-meetup {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 0;
+  margin-bottom: 12px;
+  color: #212121;
+}
+.how-meetup-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  height: 24px;
+  margin-bottom: 16px;
+  margin-left: 0;
+  color: #00798a;
+}
+
+.meetup-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 1192px;
+  margin: auto;
+}
+
+.meetup-card {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 45%;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 580px;
+  height: 180px;
+  background-color: rgba(151, 202, 209, 0.08);
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.how-meetup-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.icon-placeholder {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.meetup-card h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.meetup-card p {
+  font-size: 14px;
+  color: №212121;
+}
+
+.meetup-card a {
+  font-size: 14px;
+  color: #008294;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.meetup-card a:hover {
+  text-decoration: underline;
+}
+
+/* дружба */
+
+.friendship-box {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.meetup-section {
   padding: 40px 20px;
   background-color: #fff;
-  max-width: 1200px;
+}
+
+.container-friendship {
+  max-width: 1192px;
   margin: 0 auto;
 }
 
-.categories-title {
-  font-size: 24px;
-  font-weight: 700;
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  margin: 0;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #555;
   margin-bottom: 30px;
-  color: #1c1c1c;
+  max-width: 700px;
 }
 
-.categories-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 20px;
-  flex-wrap: nowrap;
-}
-
-.category-card {
-  background-color: #f9fcfc;
-  border-radius: 12px;
-  padding: 20px 10px;
-  text-align: center;
-  transition: transform 0.2s ease;
-  cursor: pointer;
-}
-
-.category-card:hover {
-  transform: translateY(-4px);
-}
-
-.category-icon {
-  width: 40px;
-  height: 40px;
-  margin: 0 auto 10px;
-  background-color: #eee; /* Заглушка */
-/* border-radius: 8px;
+.cards {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  color: #888;
-} */
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-/* .category-text {
-  font-size: 14px;
-  font-weight: 500;
-  color: #1c1c1c;
-} */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1 1 calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 16px 0;
+  margin-bottom: 8px;
+  color: #212121;
+}
+
+.card-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #707070;
+  margin: 0 16px 16px 0;
+  flex-grow: 1;
+}
+
+.read-more {
+  font-size: 16px;
+  font-weight: 400;
+  color: #00798a;
+  margin: 16px 0;
+  text-decoration: none;
+  margin-top: 16px;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
 
 /* футер */
 
@@ -584,7 +892,7 @@ h2 {
   font-weight: 600;
   color: #f6f7f8;
   margin-left: 0;
-  margin-top: 10px;
+  margin-top: 38px;
   margin-bottom: 35px;
   margin-right: 16px;
 }
@@ -592,6 +900,8 @@ h2 {
 .footer-content {
   display: flex;
   flex-direction: column;
+  max-width: 1120px;
+  margin: auto;
 }
 
 .cta {

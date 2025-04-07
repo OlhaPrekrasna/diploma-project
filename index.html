@@ -9,32 +9,38 @@
   </head>
   <body>
     <div class="wrapper">
-    <header>
-      <nav>
-        <div class="nav-left">
-          <a href="" class="link-logo"></a>
-          <form class="search-form">
-            <input class="search-events" type="text" placeholder="Search events">
-                <input class="search-location" type="text" placeholder="Mountain View, CA">
-                <input class="search-button" type="submit">
-          </form>
-        </div>
-        <div class="nav-right">
-          <div class="select-language">
-            <label for="language"></label>
-            <select id="language">
-              <option value="en">English</option>
-              <option value="de">Deutsch</option>
-            </select>
+      <header class="main-header">
+        <div class="container">
+          <nav class="nav-menu-left">
+            <div class="logo">
+              <a href="" class="link-logo">
+                <img src="/assets/img/png/Link - Meetup logo.png" alt="Logo"/>
+              </a>
+            </div>
+            <form class="search-bar" action="#" method="GET">
+              <div class="search-input-group">
+                <img src="/assets/img/svg/search-logo.svg" alt="Search icon" class="search-icon">
+                <input type="text" name="query" class="search-input" placeholder="Search events">
+              </div>
+            
+              <div class="divider"></div>
+            
+              <input type="text" name="location" class="location-input" value="Mountain View, CA">
+            
+              <button type="submit" class="search-button">
+                <img src="/assets/img/svg/search-button.svg" alt="Search submit icon">
+              </button>
+            </form>
+          </nav>
+    
+          <div class="header-actions">
+            <img src="/assets/img/svg/language.svg" alt="User Icon" class="user-icon">
+            <button class="login-btn">Log in</button>
+            <button class="signup-btn">Sign up</button>
           </div>
-          <form>
-            <input class="btn-log-in" type="submit" value="Log In"/>
-            <input class="btn-sign-up" type="submit" value="Sign Up"/>
-          </form>
         </div>
-      </nav>
-    </header>
-
+      </header>
+<!-- main -->
     <main>
       <div class="first-container">
           <div class="first-content">
@@ -52,12 +58,14 @@
       <!-- events -->
        <div class="events-container"></div>
       <div class="events-near">
-        <h2 class="title-events">Events near</h2>
-        <div class="location-block">
-            <p class="link-location">Mountain View, CA</p>
-            <img src="/assets/img/svg/edit.svg" class="edit"/>
-      </div>
-      <p class="all-events">See all events</p>
+        <div class="near-location">
+          <h2 class="title-events">Events near</h2>
+          <div class="location-block">
+              <p class="link-location">Mountain View, CA</p>
+              <img src="/assets/img/svg/edit.svg" class="edit"/>
+          </div>
+        </div>
+        <p class="all-events">See all events</p>
     </div>
     
       <div class="grid-container">
@@ -387,7 +395,7 @@
       <!-- join meetup -->
       <div class="join-meetup">
         <div class="join-content">
-          <h2>Join Meetup</h2>
+          <h2 class="join-title">Join Meetup</h2>
           <p class="join-text">People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together. Membership is free.</p>
           <button class="sign-up" type="submit">Sign up</button>
         </div>
@@ -482,8 +490,86 @@
             </div>
           </div>
         </section>
-        
+     </div>
+     <!-- как работает митап -->
+     
+     <section class="meetup-how">
+      <h2 class="title-how-meetup">How Meetup works</h2>
+       <div class="meetup-cards">
+         <div class="meetup-card">
+           <div class="icon-placeholder">
+             <img src="/assets/img/svg/search-icon-green.svg" alt="search"/>
+           </div>
+           <div class="how-meetup-content">
+             <h3>Discover events and groups</h3>
+             <p class="text-how-meetup">See who's hosting local events for all the things you love</p>
+             <a href="#" class="how-meetup-link">Search events and groups</a>
+           </div>
+         </div>
+         <div class="meetup-card">
+           <div class="icon-placeholder">
+             <img src="/assets/img/svg/plus-icon-green.svg" alt="plus"/>
+           </div>
+           <div class="how-meetup-content">
+             <h3 class="title-box-meetup">Start a group to host events</h3>
+             <p class="text-how-meetup">Create your own Meetup group, and draw from a community of millions</p>
+             <a href="#" class="how-meetup-link">Start a group</a>
+           </div>
+          </div>
+        </section>
       </div>
+
+      <!-- дружба -->
+<div class="friendship-box">
+  <section class="meetup-section">
+    <div class="container-friendship">
+      <h2 class="section-title">Friendships are made on Meetup</h2>
+      <p class="section-description">
+        Since 2002, members have used Meetup to make new friends, meet like-minded people, 
+        spend time on hobbies, and connect with locals over shared interests. Learn how.
+      </p>
+
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="/assets/img/png/first-article.png" alt="Brunch Meetup" class="card-img">
+          <h3 class="card-title">I Used Meetup to Make Friends at Brunch</h3>
+          <p class="card-text">
+            New Jersey-based writer and college student
+Brianna Stryker wanted to meet friends in her
+hometown. Learn how she used Meetup to make
+connections by joining a Girls Night Out Meetup
+group.
+          </p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="/assets/img/png/second-article.png" alt="Casual Friends" class="card-img">
+          <h3 class="card-title">How to Turn Casual Connections into Close Friendships</h3>
+          <p class="card-text">
+            It’s proven that close friendships are harder to make as an adult. But don’t sweat it: 
+            here’s what you can do to simplify the process.
+          </p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="/assets/img/png/third-article.png" alt="Right Number of Friends" class="card-img">
+          <h3 class="card-title">Do You Have the "Right" Number of Friends?</h3>
+          <p class="card-text">
+            Studies from around the world have tried to help people answer this question. 
+            Learn about the three tiers of friendship and how to fulfill them.
+          </p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+      
 
   </main>
 <!-- футер -->
@@ -544,16 +630,16 @@
                 <a href="#"><img src="/assets/img/png/app-store.png" alt="Download on the App Store"></a>
             </div>
         </div>
-        
+        <div class="footer-bottom">
+          <p>© 2024 Meetup</p>
+          <a href="#" class="footer-links-bottom">Terms of Service</a>
+          <a href="#" class="footer-links-bottom">Privacy Policy</a>
+          <a href="#" class="footer-links-bottom">Do Not Sell or Share My Personal Data</a>
+          <a href="#" class="footer-links-bottom">Cookie Policy</a>
+          <a href="#" class="footer-links-bottom">Help</a>
+        </div>
     </div>
-    <div class="footer-bottom">
-        <p>© 2024 Meetup</p>
-        <a href="#" class="footer-links-bottom">Terms of Service</a>
-        <a href="#" class="footer-links-bottom">Privacy Policy</a>
-        <a href="#" class="footer-links-bottom">Do Not Sell or Share My Personal Data</a>
-        <a href="#" class="footer-links-bottom">Cookie Policy</a>
-        <a href="#" class="footer-links-bottom">Help</a>
-      </div>
+    
   </footer>
 
   <script src="./scripts/index.js"></script>
