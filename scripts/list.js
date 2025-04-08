@@ -137,3 +137,49 @@ document.addEventListener("DOMContentLoaded", () => {
     // renderList(eventsStore);
 });
 
+
+// нет результатов
+const buttons = document.querySelectorAll('.filters button');
+const cards = document.querySelectorAll('.event-card');
+const noResults = document.querySelector('.no-results');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.getAttribute('data-category');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const isMatch = category === 'all' || card.dataset.category === category;
+      card.style.display = isMatch ? '' : 'none';
+      if (isMatch) visibleCount++;
+    });
+
+    if (visibleCount === 0) {
+      noResults.classList.remove('hidden');
+    } else {
+      noResults.classList.add('hidden');
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+        // document.querySelectorAll('.dropdown-btn').forEach(btn => {
+        //   btn.addEventListener('click', () => {
+        //     const dropdown = btn.nextElementSibling;
+        //     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        //   });
+        // });
+    
+        // document.addEventListener('click', (e) => {
+        //   if (!e.target.closest('.dropdown')) {
+        //     document.querySelectorAll('.dropdown-content').forEach(drop => drop.style.display = 'none');
+        //   }
+        // });
