@@ -515,7 +515,7 @@ body {
     color: #666;
   }
   
-  .hidden {
+  .hidden-templates {
     display: none;
   }
   
@@ -530,10 +530,7 @@ body {
     }
   }
   
-  #eventsListElementTmpl {
-    display: none;
-  }
-
+  
 
   /* футер */
 

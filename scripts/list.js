@@ -103,6 +103,14 @@ function renderList(events) {
   const listElemTmpl = document.getElementById("eventsListElementTmpl");
   listContainer.innerHTML = "";
 
+  // empty results
+  if (events.length === 0) {
+    const noResultsTmpl = document.getElementById("eventsListNoResultsTmpl");
+    listContainer.innerHTML = noResultsTmpl.innerHTML;
+    return;
+  }
+
+  // render list
   events.forEach((event) => {
     // image
     listElemTmpl.getElementsByClassName("event-image")[0].src = event.image;
@@ -128,7 +136,6 @@ function renderList(events) {
 
     // append
     const newElem = listElemTmpl.cloneNode(true);
-    newElem.id = "";
     listContainer.insertAdjacentHTML("beforeend", newElem.innerHTML);
   });
 }

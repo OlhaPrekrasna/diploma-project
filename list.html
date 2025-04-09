@@ -249,7 +249,7 @@
             </div>
 
             <!-- This dev is a template for building list elements in JS -->
-            <div id="eventsListElementTmpl">
+            <div class="hidden-templates" id="eventsListElementTmpl">
               <div class="divide-border"></div>
               <div class="event-item">
                 <div class="event-image-container">
@@ -264,6 +264,16 @@
                   <div class="event-category"></div>
                   <div class="event-attendees"></div>
                 </div>
+              </div>
+            </div>
+            <!-- END of the template -->
+            <!-- This dev is a template for empty list elements in JS -->
+            <div class="hidden-templates"  id="eventsListNoResultsTmpl">
+              <div class="no-results">
+                <div class="no-results-icon">
+                  <img src="/assets/img/svg/search-icon-green.svg" alt="no results"
+                </div>
+                <p class="no-results-text">Nothing found for the selected filters</p>
               </div>
             </div>
             <!-- END of the template -->
@@ -292,14 +302,6 @@
         </div>
       </div>
 
-      <!-- нет результатов -->
-
-      <div class="no-results hidden">
-        <div class="no-results-icon">
-          <img src="/assets/img/svg/search-icon-green.svg" alt="no results"
-        </div>
-        <p class="no-results-text">Nothing found for the selected filters</p>
-      </div>
     </div>
     <!-- футер -->
     <footer class="footer">
