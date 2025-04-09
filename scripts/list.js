@@ -66,6 +66,38 @@ const eventsStore = [
   },
 ];
 
+const selectType = document.getElementById("filterType");
+const selectDistance = document.getElementById("filterDistance");
+const selectCategory = document.getElementById("filterCategory");
+
+function filterList() {
+    // init from all events
+    let filteredEvents = eventsStore;
+
+    // filter type
+    filteredEvents = selectType.value == "all" ? filteredEvents : filteredEvents.filter((elem) => {
+        if (elem.type == selectType.value) {
+            return elem;
+        }
+    });
+
+    // filter distance
+    filteredEvents = selectDistance.value == "all" ? filteredEvents : filteredEvents.filter((elem) => {
+        if (elem.distance <= parseInt(selectDistance.value)) {
+            return elem;
+        }
+    });
+
+    // filter category
+    filteredEvents = selectCategory.value == "all" ? filteredEvents : filteredEvents.filter((elem) => {
+        if (elem.category == selectCategory.value) {
+            return elem;
+        }
+    });
+
+    return filteredEvents;
+}
+
 function renderList(events) {
   const listContainer = document.getElementById("eventsList");
   const listElemTmpl = document.getElementById("eventsListElementTmpl");
@@ -101,10 +133,6 @@ function renderList(events) {
   });
 }
 
-const selectType = document.getElementById("filterType");
-const selectDistance = document.getElementById("filterDistance");
-const selectCategory = document.getElementById("filterCategory");
-
 function renderSelect(select, options) {
   select.innerHTML = '<option value="all" selected="selected">Any category</option>';
   options.forEach((elem) => {
@@ -126,30 +154,32 @@ document.addEventListener("DOMContentLoaded", () => {
     //             return elem;
     //         }
     //     })
-    // }
+    // }    
 
-    const filteredEvents =
-      event.target.value == "all"
-        ? eventsStore
-        : eventsStore.filter((elem) => {
-            if (elem.type == event.target.value) {
-              return elem;
-            }
-          });
+    // const filteredEvents =
+    //   event.target.value == "all"
+    //     ? eventsStore
+    //     : eventsStore.filter((elem) => {
+    //         if (elem.type == event.target.value) {
+    //           return elem;
+    //         }
+    //       });
 
+    const filteredEvents = filterList();
     renderList(filteredEvents);
   });
 
   selectDistance.addEventListener("change", (event) => {
-    const filteredEvents =
-      event.target.value == "all"
-        ? eventsStore
-        : eventsStore.filter((elem) => {
-            if (elem.distance <= parseInt(event.target.value)) {
-              return elem;
-            }
-          });
+    // const filteredEvents =
+    //   event.target.value == "all"
+    //     ? eventsStore
+    //     : eventsStore.filter((elem) => {
+    //         if (elem.distance <= parseInt(event.target.value)) {
+    //           return elem;
+    //         }
+    //       });
 
+    const filteredEvents = filterList();
     renderList(filteredEvents);
   });
 
@@ -164,15 +194,16 @@ document.addEventListener("DOMContentLoaded", () => {
   renderSelect(selectCategory, selectCategoryOptions);
 
   selectCategory.addEventListener("change", (event) => {
-    const filteredEvents =
-      event.target.value == "all"
-        ? eventsStore
-        : eventsStore.filter((elem) => {
-            if (elem.category == event.target.value) {
-              return elem;
-            }
-          });
+    // const filteredEvents =
+    //   event.target.value == "all"
+    //     ? eventsStore
+    //     : eventsStore.filter((elem) => {
+    //         if (elem.category == event.target.value) {
+    //           return elem;
+    //         }
+    //       });
 
+    const filteredEvents = filterList();
     renderList(filteredEvents);
   });
 
