@@ -666,4 +666,119 @@ body {
   .app-links img {
     height: 40px;
   }
+
+  /* медиазапросы медиазапросы медиазапросы медиазапросы медиазапросы */
+
+  /* футер футер футер футер футер футер футер футер футер футер */
+
+  @media (max-width: 390px) {
+    .footer {
+      padding: 20px 16px;
+    }
   
+    .footer-content {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .cta {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+  
+    .footer-title {
+      font-size: 16px;
+      width: 247px;
+      height: 69px;
+      border-bottom: 1px solid #707070;
+      margin: 0;
+      
+    }
+  
+    .get-started {
+      font-size: 16px;
+      font-weight: 600;
+      width: 119px;
+      height: 44px;
+      padding: 8px 16px;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+  
+    .footer-section {
+      width: 100%;
+    }
+  
+    .footer-account {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+  
+    .your-account {
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+  
+    .footer-section ul li {
+      margin: 4px 0;
+    }
+  
+    .footer-social-media {
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .footer-follow {
+      width: 100%;
+      height: auto;
+    }
+  
+    .social-icons {
+      gap: 16px;
+    }
+  
+    .soc-icons {
+      width: 24px;
+      height: 24px;
+    }
+  
+    .app-links {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  
+    .app-links img {
+      display: none;
+      height: 36px;
+      width: auto;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px 0 0 0;
+    }
+  
+    .footer-links-bottom {
+      display: none;
+      font-size: 12px;
+    }
+  
+    .footer-bottom p {
+      font-size: 12px;
+    }
+  }
