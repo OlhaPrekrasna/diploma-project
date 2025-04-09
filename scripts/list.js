@@ -145,40 +145,11 @@ function renderSelect(select, options) {
 
 document.addEventListener("DOMContentLoaded", () => {
   selectType.addEventListener("change", (event) => {
-    // let filteredEvents;
-    // if (event.target.value == "all") {
-    //     filteredEvents = eventsStore;
-    // } else {
-    //     filteredEvents = eventsStore.filter((elem) => {
-    //         if (elem.type == event.target.value) {
-    //             return elem;
-    //         }
-    //     })
-    // }    
-
-    // const filteredEvents =
-    //   event.target.value == "all"
-    //     ? eventsStore
-    //     : eventsStore.filter((elem) => {
-    //         if (elem.type == event.target.value) {
-    //           return elem;
-    //         }
-    //       });
-
     const filteredEvents = filterList();
     renderList(filteredEvents);
   });
 
   selectDistance.addEventListener("change", (event) => {
-    // const filteredEvents =
-    //   event.target.value == "all"
-    //     ? eventsStore
-    //     : eventsStore.filter((elem) => {
-    //         if (elem.distance <= parseInt(event.target.value)) {
-    //           return elem;
-    //         }
-    //       });
-
     const filteredEvents = filterList();
     renderList(filteredEvents);
   });
@@ -194,20 +165,11 @@ document.addEventListener("DOMContentLoaded", () => {
   renderSelect(selectCategory, selectCategoryOptions);
 
   selectCategory.addEventListener("change", (event) => {
-    // const filteredEvents =
-    //   event.target.value == "all"
-    //     ? eventsStore
-    //     : eventsStore.filter((elem) => {
-    //         if (elem.category == event.target.value) {
-    //           return elem;
-    //         }
-    //       });
-
     const filteredEvents = filterList();
     renderList(filteredEvents);
   });
 
-  // render init list with all elements
+  // initial render list
   renderList(eventsStore);
 });
 
@@ -235,15 +197,3 @@ buttons.forEach((button) => {
   });
 });
 
-// document.querySelectorAll('.dropdown-btn').forEach(btn => {
-//   btn.addEventListener('click', () => {
-//     const dropdown = btn.nextElementSibling;
-//     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-//   });
-// });
-
-// document.addEventListener('click', (e) => {
-//   if (!e.target.closest('.dropdown')) {
-//     document.querySelectorAll('.dropdown-content').forEach(drop => drop.style.display = 'none');
-//   }
-// });
