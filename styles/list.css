@@ -419,7 +419,7 @@ body {
     max-width: 604px;
   }
 
-  .event-image {
+  .event-image-container {
     width: 160px;
     height: 90px;
     border-radius: 8px;
@@ -530,7 +530,7 @@ body {
     }
   }
   
-  #event-list-tmpl {
+  #eventsListElementTmpl {
     display: none;
   }
 

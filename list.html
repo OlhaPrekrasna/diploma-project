@@ -91,10 +91,10 @@
 
               <select id="filterDistance">
                 <option value="all" selected="selected">Any distance</option>
-                <option value="10">+10</option>
-                <option value="30">+30</option>
-                <option value="50">+50</option>
-                <option value="75">+75</option>
+                <option value="10">Up to 10</option>
+                <option value="30">Up to 30</option>
+                <option value="50">Up to 50</option>
+                <option value="75">Up to 75</option>
               </select>
 
               <select id="filterCategory">
@@ -114,10 +114,10 @@
             <!-- events-cards-list -->
 
             <div class="event-list" id="eventsList">
-              <div class="divide-border"></div>
+              <!-- <div class="divide-border"></div>
 
               <div class="event-item">
-                <div class="event-image">
+                <div class="event-image-container">
                   <img
                     src="https://plus.unsplash.com/premium_photo-1679488248784-65a638a3d3fc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     width="160px"
@@ -138,7 +138,7 @@
               <div class="divide-border"></div>
 
               <div class="event-item">
-                <div class="event-image">
+                <div class="event-image-container">
                   <img
                     src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1037&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%201037w"
                     width="160"
@@ -160,7 +160,7 @@
               <div class="divide-border"></div>
 
               <div class="event-item">
-                <div class="event-image">
+                <div class="event-image-container">
                   <img
                     src="https://images.unsplash.com/photo-1696258686454-60082b2c33e2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     width="160"
@@ -185,7 +185,7 @@
               <div class="divide-border"></div>
 
               <div class="event-item">
-                <div class="event-image">
+                <div class="event-image-container">
                   <img
                     src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     width="160"
@@ -206,7 +206,7 @@
               <div class="divide-border"></div>
 
               <div class="event-item">
-                <div class="event-image">
+                <div class="event-image-container">
                   <img
                     src="https://plus.unsplash.com/premium_photo-1678453146992-b80d66df9152?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     width="160px"
@@ -227,7 +227,7 @@
               <div class="divide-border"></div>
 
               <div class="event-item">
-                <div class="event-image">
+                <div class="event-image-container">
                   <img
                     src="https://plus.unsplash.com/premium_photo-1706005542509-a460d6efecb0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     width="160px"
@@ -245,30 +245,29 @@
                   <div class="event-category">Hobbies and Passions</div>
                   <div class="event-attendees">140 attendees</div>
                 </div>
-              </div>
+              </div> -->
             </div>
 
-            <div id="eventsListTmpl">
+            <!-- This dev is a template for building list elements in JS -->
+            <div id="eventsListElementTmpl">
               <div class="divide-border"></div>
               <div class="event-item">
-                <div class="event-image">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1679488248784-65a638a3d3fc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    width="160px"
-                    height="90px"
-                    border-radius="8px"
-                    alt="Manhattan Missions Church Bible Study"
-                  />
+                <div class="event-image-container">
+                  <img class="event-image" src="" width="160px" height="90px" border-radius="8px" alt="" />
                 </div>
                 <div class="event-info">
-                  <div class="event-date">WED, MAR 13 • 11:30 PM UTC</div>
-                  <div class="event-title">
-                    All Nations - Manhattan Missions Church Bible Study
+                  <div class="event-date-row">
+                    <div class="event-date"></div>
+                    <div class="event-type"></div>
                   </div>
-                  <div class="event-category">Hobbies and Passions (5 km)</div>
+                  <div class="event-title"></div>
+                  <div class="event-category"></div>
+                  <div class="event-attendees"></div>
                 </div>
               </div>
             </div>
+            <!-- END of the template -->
+
           </div>
           <!-- карта -->
           <div class="map">
