@@ -59,13 +59,18 @@ const eventsStore = [
     },
 ];
 
-const listContainer = document.getElementById("eventsList");
-
 function renderList(events) {
+    const listContainer = document.getElementById("eventsList");
+    const listTmpl = document.getElementById("eventsListTmpl")
+    const dividerTmpl = listTmpl.getElementsByClassName("divide-border");
+    
     listContainer.innerHTML = "";
     events.forEach(event => {
+        // const divider = dividerTmpl.cloneNode(true);
+        // listContainer.appendChild(divider);
+
         const li = document.createElement("li");
-        li.appendChild(document.createTextNode(JSON.stringify(event)));
+        li.appendChild(document.createTextNode(JSON.stringify(event)));        
         listContainer.appendChild(li);
     });
 }
