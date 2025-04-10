@@ -328,38 +328,6 @@ body {
     min-width: 160px;
   }
 
-  /* end new select */
-
-  /* .filters {
-    display: flex;
-    gap: 10px;
-    background-color: #F6F7F8;
-    width: 148px;
-    height: 46px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    appearance: none;
-  }
-  
-  #filterType {
-    background-color: #F6F7F8;
-    height: 46px;
-    border-radius: 20px;
-    text-align: center;
-  }
-  #filterDistance {
-    background-color: #F6F7F8;
-    height: 46px;
-    border-radius: 20px;
-    text-align: center;
-  }
-  #filterCategory {
-    background-color: #F6F7F8;
-    height: 46px;
-    border-radius: 20px;
-    text-align: center;
-  } */
-
 /* event-cards-list */
   .event-list {
     /* padding: 0 20px; */

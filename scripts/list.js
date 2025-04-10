@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderList(eventsStore);
 });
 
-// нет результатов
+// no results
 const buttons = document.querySelectorAll(".filters button");
 const cards = document.querySelectorAll(".event-card");
 const noResults = document.querySelector(".no-results");
