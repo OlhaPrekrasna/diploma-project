@@ -482,41 +482,64 @@ h1 {
 .join-meetup {
   display: flex;
   flex-direction: row;
-  width: 1192px;
-  height: 236px;
-  background-color: rgba(151, 202, 209, 0.08);
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1192px;
+  padding: 16px;
+  /* width: 1192px; */
+  /* height: 236px;
+  background-color: rgba(151, 202, 209, 0.08); */
   border: 1px solid black;
   border-radius: 8px;
-  margin-top: 34px;
-  margin: auto;
+  align-items: start;
+  gap: 20px;
+  /* margin-top: 34px; */
+  margin: 24px auto;
 }
 
 .join-content {
-  display: flex;
+  flex: 1;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   margin-top: 30px;
-  color: #212121;
+  color: #212121; */
 }
 
 .join-title {
-  color: #212121;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 16px;
+  font-size: 20px;
   margin-left: 56px;
+  margin-top: 36px;
+  text-align: left;
+  margin-bottom: 16px;
+  /* color: #212121;
+  font-weight: 600;
+  margin-top: 0; */
+  /* margin-bottom: 16px;
+  margin-left: 56px; */
 }
 
 .join-text {
-  font-weight: 400;
-  width: 665px;
-  height: 56px;
-  margin-bottom: 16px;
+
+  max-width: 665px;
+  font-size: 16px;
   margin-left: 56px;
+  margin-right: 20px;
+  text-align: left;
+  white-space: normal;
+  /* font-size: 20px;
+  height: 56px;
+  margin-top: 36px;
+  text-align: left; */
+  /* margin-bottom: 16px;
+  white-space: normal; */
 }
 
 .sign-up {
+  max-width: 192px;
+  margin-left: 56px;
+  margin-top: 20px;
   background-color: #e32359;
   color: #ffffff;
   width: 192px;
@@ -528,11 +551,18 @@ h1 {
 }
 
 .img-join-meetup {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  /* display: flex;
+  margin: auto;
   width: 341px;
   height: 196px;
   margin-right: 56px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
 }
 
 /* category */
@@ -1209,10 +1239,13 @@ h1 {
   .title-events {
     font-size: 20px;
     margin-top: 32px;
+    white-space: nowrap;
   }
+
   .location-block {
     margin-top: 25px;
   }
+
   .all-events {
     display: none;
   }
@@ -1274,7 +1307,7 @@ h1 {
     width: 246px;
     height: 14px;
     font-size: 10px;
-    margin-bottom: 10зч;
+    margin-bottom: 10px;
   }
   .event-location {
     font-size: 9px;
@@ -1304,7 +1337,6 @@ h1 {
     justify-items: center;
     }
   
-
   .category-card {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -1465,7 +1497,6 @@ h1 {
 
   .footer-content {
     flex-direction: column;
-    align-items: center;
   }
 
   .footer-links {
@@ -1475,11 +1506,47 @@ h1 {
 
   .footer-section {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
   }
-  }
+  
   /* join meetup  */
-.join-meetup {
+
+  .join-meetup {
+    border: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 12px;
+    text-align: left;
+    background-color: rgba(151, 202, 209, 0.08);;
+  }
+
+  .join-title {
+    margin: 0 0 12px 0;
+    text-align: left;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .img-join-meetup {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 16px 0;
+  }
+
+  .join-text {
+    font-size: 16px;
+    margin: 0 0 16px 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .sign-up {
+    margin: 0 auto;
+    display: block;
+    /* width: fit-content; */
+  }
+/* .join-meetup {
   display: flex;
   flex-direction: row; 
   width: 100%;
@@ -1500,7 +1567,7 @@ h1 {
 }
 
 .join-title {
-  font-size: 28px;
+  font-size: 20px;
   margin-left: 56px;
   margin-top: 36px;
   text-align: left;
@@ -1527,7 +1594,7 @@ h1 {
   max-width: 320px;
   height: auto;
   margin: 0 auto;
-}
+} */
 
 .categories-title {
   font-size: 28px;
@@ -1535,7 +1602,6 @@ h1 {
 }
 
 /* popular cities  */
-@media (max-width: 390px) {
   .popular-cities {
     margin: 32px auto;
     width: 100%;
@@ -1582,10 +1648,8 @@ h1 {
   .cities-grid .city-card:last-child {
     display: none;
   }
-}
 
 /* footer */
-@media (max-width: 390px) {
 
   .first-img {
     margin-left: 0;
@@ -1649,6 +1713,7 @@ h1 {
   }
 
   .footer-section ul li {
+    
     margin: 4px 0;
   }
 
