@@ -313,7 +313,7 @@ h1 {
   flex-wrap: nowrap;
   max-width: 1192px;
   margin: auto;
-  margin-bottom: 16px;
+  margin-bottom: 26px;
   height: 36px;
 }
 
@@ -349,6 +349,8 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 25px;
+  margin-left: 15px;
   width: 240px;
   height: 44px;
   border: 1px solid rgba(151, 202, 209, 0.12);
@@ -571,11 +573,11 @@ h1 {
   border-radius: 8px;
   padding: 20px 10px;
   text-align: center;
-  flex: 1;
   margin: 0 10px;
   transition: transform 0.2s ease;
   cursor: pointer;
   width: 135px;
+  height: 112px;
   color: #212121;
 }
 
@@ -630,6 +632,7 @@ h1 {
   padding-left: 0;
   margin-left: 0;
   margin-bottom: 16px;
+  margin-top: 20px;
   text-align: start;
 }
 
@@ -680,8 +683,9 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-beetween;
+  align-items: start;
   max-width: 1192px;
-  margin-left: 0px;
+  margin-left: 10px;
   margin: auto;
 }
 
@@ -729,6 +733,8 @@ h1 {
 .meetup-card {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex: 1 1 45%;
   border: 1px solid black;
   border-radius: 8px;
@@ -741,12 +747,12 @@ h1 {
 .how-meetup-content {
   display: flex;
   flex-direction: column;
-  margin-left: 24px;
+  margin-left: 30px;
 }
 
 .icon-placeholder {
   font-size: 32px;
-  margin-bottom: 12px;
+  margin: 12px;
 }
 
 .meetup-card h3 {
@@ -756,7 +762,7 @@ h1 {
 
 .meetup-card p {
   font-size: 14px;
-  color: №212121;
+  color: #212121;
 }
 
 .meetup-card a {
@@ -790,14 +796,15 @@ h1 {
 .section-title {
   font-size: 28px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
   margin: 0;
 }
 
 .section-description {
   font-size: 16px;
-  color: #555;
+  color: #707070;
   margin-bottom: 30px;
+  margin-top: 24px;
   max-width: 700px;
 }
 
@@ -825,7 +832,7 @@ h1 {
   font-size: 18px;
   font-weight: 600;
   margin: 16px 0;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: #212121;
 }
 
@@ -1198,8 +1205,6 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    
   }
   .title-events {
     font-size: 20px;
@@ -1247,11 +1252,13 @@ h1 {
     flex-direction: row;
     margin-right: 10px;
     }
+
     .event-info {
       margin-top: 3px;
       margin-bottom: 3px;
       font-size: 8px;
     }
+
   .event-content {
     display: flex;
     flex-direction: column;
@@ -1261,9 +1268,8 @@ h1 {
     font-weight: 500;
     white-space: normal;
     padding: 0;
-    
-    
   }
+
   .event-title {
     width: 246px;
     height: 14px;
@@ -1524,7 +1530,7 @@ h1 {
 }
 
 .categories-title {
-  font-size: 20px;
+  font-size: 28px;
   margin: 0;
 }
 
