@@ -15,7 +15,8 @@ body {
 }
 
 .main-header {
-  width: 1512px;
+  max-width: 1512px;
+  width: 100%;
   height: 64px;
   background-color: #fff;
   display: flex;
@@ -76,6 +77,12 @@ body {
   background-color: #007bff;
   color: #fff;
 }
+.login-btn:focus,
+.signup-btn:focus,
+.search-input:focus {
+  outline: 2px solid #00798a;
+  outline-offset: 2px;
+}
 
 .user-icon {
   width: 24px;
@@ -89,14 +96,6 @@ body {
 } */
 .wrapper > main {
   flex: 1;
-}
-
-.container {
-  width: 100%;
-  padding: 0 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .logo img {
@@ -119,8 +118,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #fff;
-  font-family: "Roboto", sans-serif;
+  background-color: #FFFFFF;
 }
 
 .search-input-group {
@@ -199,7 +197,6 @@ body {
 
 .login-btn,
 .signup-btn {
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #212121;
@@ -210,7 +207,6 @@ body {
 }
 
 .login-btn {
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
   padding: 0;
@@ -221,13 +217,13 @@ body {
 .login-btn:hover {
   background-color: #00798a;
   border: 1px solid #00798a;
-  color: #ffffff;
+  color: #FFFFFF;
   border-radius: 8px;
   width: 83px;
   height: 36px;
 }
 /* доделать анимацию при клике */
-.login-btn:click {
+.login-btn:active {
   background-color: #00798a;
   border: 1px solid #00798a;
   color: #ffffff;
@@ -237,7 +233,6 @@ body {
 }
 
 .signup-btn {
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
   background-color: #00798a;
@@ -267,14 +262,12 @@ body {
 }
 h1 {
   width: 700px;
-  font-family: "Roboto", sans-serif;
   font-size: 42px;
   color: #212121;
 }
 .intro-text {
   width: 609px;
   height: 72px;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #212121;
@@ -285,7 +278,7 @@ h1 {
 .first-img {
   width: 379px;
   height: 269px;
-  margin-left: 54px;
+  /* margin-left: 54px; */
 }
 /* кнопка joinMeetup */
 .join-meet {
@@ -294,7 +287,7 @@ h1 {
   border: 1px solid #00798a;
   border-radius: 8px;
   background-color: #00798a;
-  color: #ffffff;
+  color: #FFFFFF;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -303,7 +296,7 @@ h1 {
 
 .join-meet:hover {
   background-color: #005f6b;
-  color: #ffffff;
+  color: #FFFFFF;
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
@@ -330,7 +323,6 @@ h1 {
 }
 
 .title-events {
-  font-family: "Roboto", sans-serif;
   font-size: 28px;
   font-weight: 600;
   margin-right: 10px;
@@ -340,7 +332,6 @@ h1 {
 .link-location {
   width: 186px;
   height: 24px;
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #00798a;
@@ -369,14 +360,14 @@ h1 {
   width: 106px;
   height: 24px;
   color: #00798a;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(3, 1fr);
   gap: 15px;
   width: 1196px;
@@ -415,7 +406,7 @@ h1 {
   padding-top: 32px;
   padding-left: 2px;
   border: none;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 .event-content {
   padding-top: 110px;
@@ -426,7 +417,6 @@ h1 {
 }
 
 .event-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #212121;
   font-size: 20px;
@@ -443,7 +433,6 @@ h1 {
 }
 .event-location {
   color: #707070;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
 }
@@ -469,7 +458,6 @@ h1 {
 }
 .text-info {
   color: #212121;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -479,7 +467,6 @@ h1 {
 .event-time {
   font-size: 14px;
   color: #212121;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 .join-meetup {
@@ -503,14 +490,12 @@ h1 {
 }
 .join-title {
   color: #212121;
-  font-family: "Roboto", sans-serif;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 16px;
   margin-left: 56px;
 }
 .join-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   width: 665px;
   height: 56px;
@@ -535,17 +520,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* навигационное меню справа */
-/* .nav-right {
-  padding-left: 1550px;
-  display: flex;
-  position: absolute;
-  height: 42px;
-  font-size: 14px;
-  justify-content: center;
-  align-items: center;
-} */
-
 /* категории */
 
 .categories-section {
@@ -560,7 +534,6 @@ h1 {
 }
 
 .categories-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 28px;
   height: 36px;
@@ -635,11 +608,9 @@ h1 {
   margin-top: 64px;
   margin-left: 0;
   text-align: center;
-  font-family: "Roboto", sans-serif;
 }
 
 .cities-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 28px;
   color: #212121;
@@ -650,12 +621,10 @@ h1 {
 }
 
 .cities-subtitle {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #707070;
   margin-bottom: 40px;
-  /* max-width: 600px; */
   margin-left: 0;
   text-align: start;
 }
@@ -687,7 +656,6 @@ h1 {
 }
 
 .city-name {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #212121;
@@ -708,14 +676,12 @@ h1 {
   margin-top: 64px;
   margin-bottom: 16px;
   padding: 0;
-  font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 28px;
   color: #212121;
   text-align: left;
 }
 .title-box-meetup {
-  font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 20px;
   height: 24px;
@@ -724,7 +690,6 @@ h1 {
   color: #212121;
 }
 .text-how-meetup {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin-left: 0;
@@ -732,7 +697,6 @@ h1 {
   color: #212121;
 }
 .how-meetup-link {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   height: 24px;
@@ -796,14 +760,13 @@ h1 {
 /* дружба */
 
 .friendship-box {
-  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .meetup-section {
   padding: 40px 20px;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .container-friendship {
@@ -885,7 +848,6 @@ h1 {
 .footer-title {
   width: 249px;
   height: 24px;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #f6f7f8;
@@ -942,7 +904,6 @@ h1 {
   margin-bottom: 20px;
 }
 .footer-account {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #f6f7f8;
@@ -951,7 +912,6 @@ h1 {
 .your-account {
   margin-bottom: 7px;
   color: #c5c4c4;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -987,7 +947,6 @@ h1 {
   width: 278px;
   height: 90px;
   margin-bottom: 20px;
-  /* margin-top: 24px; */
 }
 .soc-icons {
   width: 30px;
@@ -1007,7 +966,6 @@ h1 {
 }
 .footer-links-bottom {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #c5c4c4;
@@ -1025,9 +983,182 @@ h1 {
 .app-links img {
   height: 40px;
 }
+/* адаптив адаптив адаптив адаптив адаптив адаптив адаптив адаптив  */
 
+
+@media (max-width: 390px) {
+  body {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    padding: 0 10px;
+  }
+
+  .main-header {
+    height: 56px;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .container {
+    padding: 0 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .nav-menu a {
+    font-size: 14px;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .login-btn,
+  .signup-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+
+  .search-bar {
+    width: 100%;
+    height: 40px;
+    margin-top: 12px;
+  }
+
+  .search-input-group {
+    padding-left: 8px;
+  }
+
+  .search-input {
+    font-size: 12px;
+  }
+
+  .search-button {
+    width: 40px;
+    height: 100%;
+  }
+
+  .first-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .intro-text {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .first-img {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .join-meet {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 24px;
+  }
+
+  .events-near {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .grid-item {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .event-card {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .categories-grid {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .category-card {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+
+  .cities-grid {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .city-card {
+    width: 100%;
+  }
+
+  .meetup-cards {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .meetup-card {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: center;
+  }
+}
 /* футер адаптив  */
 @media (max-width: 390px) {
+
+  .first-img {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    }
+  
   .footer {
     padding: 20px 16px;
   }
