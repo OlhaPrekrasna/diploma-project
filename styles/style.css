@@ -430,44 +430,53 @@ h1 {
   gap: 8px;
   margin-bottom: 5px;
 }
+
 .event-location {
   color: #707070;
   font-weight: 500;
   font-size: 14px;
 }
+
 .going {
   display: flex;
   flex-direction: row;
 }
+
 .calender {
   color: #707070;
   width: 20px;
   height: 20px;
 }
+
 .going-check {
   color: #707070;
   width: 20px;
   height: 20px;
 }
+
 .ticket {
   color: #707070;
   width: 20px;
   height: 20px;
   margin-left: 20px;
 }
+
 .text-info {
   color: #212121;
   font-weight: 400;
   font-size: 16px;
 }
+
 .event-icon {
   font-size: 16px;
 }
+
 .event-time {
   font-size: 14px;
   color: #212121;
   font-weight: 400;
 }
+
 .join-meetup {
   display: flex;
   flex-direction: row;
@@ -479,6 +488,7 @@ h1 {
   margin-top: 34px;
   margin: auto;
 }
+
 .join-content {
   display: flex;
   flex-direction: column;
@@ -487,6 +497,7 @@ h1 {
   margin-top: 30px;
   color: #212121;
 }
+
 .join-title {
   color: #212121;
   font-weight: 600;
@@ -494,6 +505,7 @@ h1 {
   margin-bottom: 16px;
   margin-left: 56px;
 }
+
 .join-text {
   font-weight: 400;
   width: 665px;
@@ -501,6 +513,7 @@ h1 {
   margin-bottom: 16px;
   margin-left: 56px;
 }
+
 .sign-up {
   background-color: #e32359;
   color: #ffffff;
@@ -511,6 +524,7 @@ h1 {
   margin-bottom: 36px;
   margin-left: 56px;
 }
+
 .img-join-meetup {
   width: 341px;
   height: 196px;
@@ -519,7 +533,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* категории */
+/* category */
 
 .categories-section {
   display: flex;
@@ -592,7 +606,7 @@ h1 {
   color: #1c1c1c;
 }
 
-/* города */
+/* cities */
 .popular-cities {
   display: flex;
   flex-direction: column;
@@ -660,7 +674,7 @@ h1 {
   color: #212121;
 }
 
-/* как работает митап? */
+/* how works meetup? */
 
 .meetup-how {
   display: flex;
@@ -756,7 +770,7 @@ h1 {
   text-decoration: underline;
 }
 
-/* дружба */
+/* friendship */
 
 .friendship-box {
   margin: 0;
@@ -836,7 +850,7 @@ h1 {
   text-decoration: underline;
 }
 
-/* футер */
+/* footer */
 
 .footer {
   background-color: #212121;
@@ -984,7 +998,6 @@ h1 {
 }
 /* адаптив адаптив адаптив адаптив адаптив адаптив адаптив адаптив  */
 
-
 @media (max-width: 390px) {
   хедер 
   .main-header {
@@ -994,13 +1007,11 @@ h1 {
     padding: 16px 20px;
   }
 
-  /* Логотип */
   .logo img {
     height: 40px;
-    margin-bottom: 16px; /* Отступ снизу для логотипа */
+    margin-bottom: 16px;
   }
 
-  /* Навигация и действия в хедере */
   .header-actions {
     display: flex;
     flex-direction: row;
@@ -1011,10 +1022,9 @@ h1 {
   }
 
   .header-actions .user-icon {
-    margin-left: 10px; /* небольшое расстояние для иконки */
+    margin-left: 10px;
   }
 
-  /* Кнопки "Log in" и "Sign Up" */
   .login-btn, .signup-btn {
     font-size: 14px;
     padding: 8px 16px;
@@ -1034,7 +1044,6 @@ h1 {
     color: #fff;
   }
 
-  /* Расположение элементов навигации */
   .nav-menu {
     display: flex;
     justify-content: center;
@@ -1046,7 +1055,6 @@ h1 {
     font-size: 14px;
   }
 
-  /* Блок поиска */
   .search-bar {
     width: 100%;
     max-width: 100%;
@@ -1057,7 +1065,7 @@ h1 {
     border-radius: 10px;
     overflow: hidden;
     background-color: #FFFFFF;
-    margin-bottom: 16px; /* Отступ снизу для блока поиска */
+    margin-bottom: 16px; 
   }
 
   .search-input-group {
@@ -1079,9 +1087,8 @@ h1 {
     cursor: pointer;
   }
 
-  /* Локализация и язык */
   .language-icon, .language-text {
-    display: none; /* Убираем языковую иконку и текст на маленьком экране */
+    display: none;
   }
   body {
     font-size: 14px;
@@ -1155,7 +1162,6 @@ h1 {
     width: 100%;
     height: 461px;
     margin-bottom: 24px;
-    /* border: none — не нужен, если по умолчанию нет */
   }
   
   h1 {
@@ -1206,7 +1212,6 @@ h1 {
     display: none;
   }
 
-  @media (max-width: 390px) {
     .grid-container {
       height: auto;
       grid-template-columns: 1fr;
@@ -1222,14 +1227,13 @@ h1 {
       width: 380px;
       height: auto;
       padding: 10px;
-  
     }
   
     .event-img {
       width: 104px;
       height: 72px;
       margin-top: 15px;
-      position: static; /* или просто убираем position */
+      position: static;
     width: 106px;
     height: 74px;
     margin-right: 12px;
@@ -1289,36 +1293,24 @@ h1 {
   }
   .categories-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
-    gap: 10px; /* можно изменить на нужный отступ */
-    justify-items: center; /* центрируем элементы по горизонтали */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    justify-items: center;
     }
-  }
+  
 
   .category-card {
     width: 100%;
-    aspect-ratio: 1 / 1; /* делает карточку квадратной */
-    padding: 10px;
+    aspect-ratio: 1 / 1;
     margin: auto;
-    margin-bottom: 12px; /* убираем нижний отступ, т.к. есть gap у grid */
+    margin-bottom: 12px;
     box-sizing: border-box;
     display: flex;
   flex-direction: column;
-  justify-content: center; /* по вертикали */
-  align-items: center;     /* по горизонтали */
+  justify-content: center; 
+  align-items: center;     
   text-align: center;
   }
-
-
-
-
-
-
-
-
-
-
-
 
   .cities-grid {
     flex-direction: column;
@@ -1340,86 +1332,86 @@ h1 {
     padding: 16px;
   }
 
-  /* как работает митап */
+  /* how works meetup */
   .meetup-how {
-    margin-top: 32px; /* отступ сверху */
-    margin-left: 16px; /* отступ слева */
-    margin-right: 16px; /* отступ справа */
+    margin-top: 32px; 
+    margin-left: 16px; 
+    margin-right: 16px; 
   }
 
   .title-how-meetup {
-    font-size: 20px; /* уменьшаем размер заголовка для маленьких экранов */
+    font-size: 20px; 
     margin-top: 32px;
     text-align: left;
   }
 
   .meetup-cards {
     display: flex;
-    flex-direction: column; /* размещаем карточки в колонку */
+    flex-direction: column;
     gap: 16px;
-    width: 100%; /* чтобы контейнер занимал всю доступную ширину */
+    width: 100%; 
     margin: auto;
 
   }
 
   .meetup-card {
-    width: 100%; /* делаем карточки на всю ширину контейнера */
-    max-width: 100%; /* ограничиваем ширину карточек */
-    height: auto; /* высота будет адаптироваться */
-    padding: 16px; /* уменьшаем отступы для маленьких экранов */
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    padding: 16px; 
     border: none;
   }
 
   .how-meetup-content {
-    margin-left: 15px; /* убираем отступ слева, чтобы не было пустого пространства */
+    margin-left: 15px; 
   }
 
   .text-how-meetup, .how-meetup-link {
-    font-size: 14px; /* уменьшаем размер шрифта для маленьких экранов */
+    font-size: 14px; 
   }
 
   .title-box-meetup {
-    font-size: 18px; /* уменьшаем размер шрифта для меньших экранов */
+    font-size: 18px; 
   }
 
-  /* дружба */
+  /* friendship */
 
   .meetup-section {
-    padding: 20px; /* уменьшаем отступы для маленьких экранов */
+    padding: 20px; 
   }
 
   .container-friendship {
-    max-width: 100%; /* контейнер растягиваем на всю ширину */
+    max-width: 100%; 
   }
 
   .section-title {
-    font-size: 20px; /* уменьшаем размер шрифта */
+    font-size: 20px; 
     font-weight: 600;
     padding-bottom: 12px;
     margin-bottom: 12px;
     margin: 0;
-    text-align: left; /* прижимаем к левому краю */
+    text-align: left; 
   }
 
   .section-description {
-    font-size: 14px; /* уменьшаем размер текста */
+    font-size: 14px; 
     color: #555;
     margin-bottom: 10px;
-    max-width: 100%; /* убираем ограничение по ширине */
+    max-width: 100%; 
   }
 
   .cards {
     display: flex;
-    flex-direction: column; /* карточки располагать в колонку */
+    flex-direction: column; 
     gap: 16px;
-    width: 100%; /* растягиваем контейнер */
+    width: 100%; 
   }
 
   .card {
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-    flex: 1 1 100%; /* карточки занимают всю ширину */
+    flex: 1 1 100%; 
     display: flex;
     flex-direction: column;
     
@@ -1431,7 +1423,7 @@ h1 {
   }
 
   .card-title {
-    font-size: 18px; /* уменьшаем размер заголовка в карточке */
+    font-size: 18px; 
     font-weight: 600;
     margin: 16px 0;
     margin-bottom: 8px;
@@ -1439,7 +1431,7 @@ h1 {
   }
 
   .card-text {
-    font-size: 14px; /* уменьшаем размер текста */
+    font-size: 14px; 
     font-weight: 400;
     color: #707070;
     margin: 0 0 16px 0;
@@ -1447,7 +1439,7 @@ h1 {
   }
 
   .read-more {
-    font-size: 14px; /* уменьшаем размер текста */
+    font-size: 14px; 
     font-weight: 400;
     color: #00798a;
     margin: 16px 0;
@@ -1459,7 +1451,7 @@ h1 {
     text-decoration: underline;
   }
 
-  /* футер */
+  /* footer */
 
   .footer {
     padding: 20px 10px;
@@ -1480,10 +1472,10 @@ h1 {
     text-align: center;
   }
   }
-  /* join meetup join meetup join meetup join meetup join meetup */
+  /* join meetup  */
 .join-meetup {
   display: flex;
-  flex-direction: row; /* ставим блоки вертикально */
+  flex-direction: row; 
   width: 100%;
   max-width: 1192px;
   height: auto;
@@ -1536,7 +1528,7 @@ h1 {
   margin: 0;
 }
 
-/* популярные города  */
+/* popular cities  */
 @media (max-width: 390px) {
   .popular-cities {
     margin: 32px auto;
@@ -1570,8 +1562,8 @@ h1 {
   .city-image {
     width: 100%;
     height: 0;
-    padding-top: 100%; /* Это делает элемент квадратным */
-    border-radius: 50%; /* Делаем круг */
+    padding-top: 100%; 
+    border-radius: 50%; 
     background-size: cover;
     background-position: center;
     margin-bottom: 8px;
@@ -1586,7 +1578,7 @@ h1 {
   }
 }
 
-/* футер адаптив  */
+/* footer */
 @media (max-width: 390px) {
 
   .first-img {
