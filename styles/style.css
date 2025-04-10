@@ -366,7 +366,6 @@ h1 {
 
 .grid-container {
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(3, 1fr);
   gap: 15px;
@@ -1049,28 +1048,41 @@ h1 {
     width: 40px;
     height: 100%;
   }
-
   .first-container {
+    display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: center;
+    margin: 5px;
+    max-width: 380px;
     width: 100%;
-    height: auto;
+    height: 461px;
+    margin-bottom: 24px;
+    /* border: none — не нужен, если по умолчанию нет */
   }
-
+  
   h1 {
-    font-size: 28px;
-    text-align: center;
+    max-width: 380px;
+    width: 100%;
+    font-size: 25px;
+    color: #212121;
+    line-height: 1.2;
+    text-align: start;
   }
-
   .intro-text {
-    font-size: 14px;
-    text-align: center;
+    max-width: 358px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: start;
+    margin-bottom: 0;
   }
 
   .first-img {
-    width: 250px;
+    max-width: 215px;
+    width: 100%;
+    height: 152px;
     height: auto;
-    margin-top: 20px;
+    margin: auto;
   }
 
   .join-meet {
@@ -1080,24 +1092,104 @@ h1 {
   }
 
   .events-near {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+  }
+  .title-events {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 32px;
+  }
+  .location-block {
+    margin-top: 25px;
+  }
+  .all-events {
+    display: none;
+  }
+
+  @media (max-width: 390px) {
+    .grid-container {
+      height: auto;
+      grid-template-columns: 1fr;
+      padding-top: 20px;
+    margin: 10px;
+    }
+  
+    .grid-item {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+      flex-direction: row;
+      width: 380px;
+      height: auto;
+      padding: 10px;
+  
+    }
+  
+    .event-img {
+      width: 104px;
+      height: 72px;
+      margin-top: 15px;
+      position: static; /* или просто убираем position */
+    width: 106px;
+    height: 74px;
+    margin-right: 12px;
+    }
+  
+    .event-card {
+      width: 265px;
+      height: 64px;
+      padding-top: 0;
+      display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    }
+    .event-info {
+      margin-top: 3px;
+      margin-bottom: 3px;
+      font-size: 8px;
+    }
+  .event-content {
+    display: flex;
     flex-direction: column;
+    max-width: 265px;
+    height: 64px;
+    font-size: 9px;
+    font-weight: 500;
+    white-space: normal;
+    padding: 0;
+    
+    
+  }
+  .event-title {
+    width: 246px;
+    height: 14px;
+    font-size: 10px;
+    margin-bottom: 10зч;
+  }
+  .event-location {
+    font-size: 9px;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
   }
-
-  .grid-container {
-    grid-template-columns: 1fr;
-    gap: 12px;
+  .event-time {
+    font-size: 9px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
-
-  .grid-item {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+  .going {
+    font-size: 9px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
-
-  .event-card {
-    width: 100%;
-    padding: 16px;
+  .text-info {
+    font-size: 9px;
   }
 
   .categories-grid {
