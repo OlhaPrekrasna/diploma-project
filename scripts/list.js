@@ -180,27 +180,3 @@ document.addEventListener("DOMContentLoaded", () => {
   renderList(eventsStore);
 });
 
-// no results
-const buttons = document.querySelectorAll(".filters button");
-const cards = document.querySelectorAll(".event-card");
-const noResults = document.querySelector(".no-results");
-
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const category = button.getAttribute("data-category");
-    let visibleCount = 0;
-
-    cards.forEach((card) => {
-      const isMatch = category === "all" || card.dataset.category === category;
-      card.style.display = isMatch ? "" : "none";
-      if (isMatch) visibleCount++;
-    });
-
-    if (visibleCount === 0) {
-      noResults.classList.remove("hidden");
-    } else {
-      noResults.classList.add("hidden");
-    }
-  });
-});
-
